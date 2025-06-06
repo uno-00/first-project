@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>School Supplies Inventory</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>School Inventory</h2>
+      <ul>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Supplies</a></li>
+        
+      </ul>
+    </aside>
+
+    <main class="main">
+      <h1>School Supplies List</h1>
+
+      <form id="addForm">
+        <input type="text" id="itemName" placeholder="Item Name" required />
+        <input type="number" id="itemQuantity" placeholder="Quantity" required />
+        <button type="submit" id="formButton">Add Item</button>
+      </form>
+      
+      <input type="text" id="searchInput" placeholder="Search by item name..." />
+      
+      <table id="inventoryTable">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Quantity</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+         
+        </tbody>
+      </table>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
